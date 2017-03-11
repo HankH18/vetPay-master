@@ -2,11 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Backbone from 'backbone'
 import init from './init'
+import MhpView from './views/mhpview.js'
 
-
-const app = function() {
-  document.querySelector('.container').innerHTML = `<h1>vetPay</h1>`
+var app = function() {
+	ReactDOM.render(<MhpView/>,document.querySelector('.container'))
 }
+
+
 
 // x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..
 // NECESSARY FOR USER FUNCTIONALITY. DO NOT CHANGE. 
